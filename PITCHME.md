@@ -27,11 +27,11 @@ A ideia era um ambiente simples:
       count                   = "${var.instances_count}"
       ami                     = "${data.aws_ami.amazon_linux.id}"
       instance_type           = "${var.instance_type}"
-      iam_instance_profile    = "${data.aws_iam_role.role-oi-controle.name}"
-      user_data               = "${data.template_file.user_data_blue.rendered}"
+      iam_instance_profile    = "${data.aws_iam_role.oicontrole.name}"
+      user_data               = "${data.template_file.blue.rendered}"
       disable_api_termination = "${var.termination_protection}"
       key_name                = "${var.key_name}"
-      subnet_id               = "${aws_subnet.subnet_oi_controle_adesao_spring.id}"
+      subnet_id               = "${aws_subnet.subnet_adesao_spring.id}"
       vpc_security_group_ids = [
         ...
       ]
