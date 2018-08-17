@@ -6,7 +6,7 @@ Um overview sobre as soluções adotadas e a forma de criação do ambiente.
 
 ## Ideia inicial ##
 
-![Diagrama](assets/architecture_diagram.jpg){:height="70%" width="70%"}
+![Diagrama](assets/architecture_diagram.jpg){height="30%" width="30%"}
 
 Organização do ambiente.
 
