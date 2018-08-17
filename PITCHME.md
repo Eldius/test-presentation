@@ -23,6 +23,29 @@ A ideia era um ambiente simples:
 
 - Criar unidade por unidade
 
+
+    resource "aws_instance" "adesao_spring_boot" {
+      count = "${var.instances_count}"
+
+      ami                     = "${data.aws_ami.amazon_linux.id}"
+      instance_type           = "${var.instance_type}"
+      iam_instance_profile    = "${data.aws_iam_role.role-oi-controle.name}"
+      user_data               = "${data.template_file.user_data_blue.rendered}"
+      disable_api_termination = "${var.termination_protection}"
+      key_name                = "${var.key_name}"
+
+      subnet_id = "${aws_subnet.subnet_oi_controle_adesao_spring.id}"
+
+      vpc_security_group_ids = [
+        ...
+      ]
+
+      tags {
+        ...
+      }
+    }
+
+
 ---
 
 ![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
