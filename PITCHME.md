@@ -4,9 +4,18 @@ Um overview sobre as soluções adotadas e a forma de criação do ambiente.
 
 ---
 
-## Ideia inicial ##
+## Estrutura da arquitetura ##
 
----?image=assets/images/architecture_diagram.jpg&size=auto 50%&opacity=40
+A ideia era um ambiente simples:
+
+- Dois ambientes de execução:
+  - `Blue`
+  - `Green`
+- Cada ambiente em mais de uma AZ
+  - `A`
+  - `C`
+
+---?image=assets/images/architecture_diagram.jpg&size=auto 80%&opacity=100
 
 ---
 
