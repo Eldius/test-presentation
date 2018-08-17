@@ -4,7 +4,7 @@ Um overview sobre as soluções adotadas e a forma de criação do ambiente.
 
 ---
 
-## Estrutura da arquitetura ##
+## Arquitetura ##
 
 A ideia era um ambiente simples:
 

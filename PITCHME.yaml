@@ -6,7 +6,7 @@
 #
 theme : sky
 theme-override : assets/css/PITCHME.css
-logo : assets/image/logo.png
+logo : https://www.gravatar.com/avatar/2085c3f2835a5e1896b9a87373f42bca
 highlight : atom-one-dark
 transition : none
 published : true
