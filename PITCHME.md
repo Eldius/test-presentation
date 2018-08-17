@@ -6,7 +6,9 @@ Um overview sobre as soluções adotadas e a forma de criação do ambiente.
 
 ## Ideia inicial ##
 
-![Flux Explained](assets/architecture_diagram.jpg)
+![Diagrama](assets/architecture_diagram.jpg)
+
+Organização do ambiente.
 
 ---
 
