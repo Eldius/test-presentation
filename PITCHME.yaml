@@ -11,3 +11,4 @@ highlight : atom-one-dark
 transition : none
 published : true
 footnote : "GitPitch [ Sunkist ] Presentation Template"
+remote-control : true
