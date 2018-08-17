@@ -14,7 +14,7 @@ Organização do ambiente.
 
 ## Ideia inicial [2] ##
 
----?image=assets/images/architecture_diagram.jpg&size=auto 80%&color=black @title[Diagrama]
+?image=assets/images/architecture_diagram.jpg&size=auto 80%&color=black @title[Diagrama]
 
 Organização do ambiente.
 
