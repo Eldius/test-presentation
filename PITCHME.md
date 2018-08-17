@@ -19,25 +19,25 @@ A ideia era um ambiente simples:
 
 ---
 
-## Tentativa inicial ##
+@title[Tentativa inicial]
 
-
-    resource "aws_instance" "adesao_spring_boot" {
-      ami                     = "${data.aws_ami.amazon_linux.id}"
-      instance_type           = "${var.instance_type}"
-      iam_instance_profile    = "${data.aws_iam_role.oicontrole.name}"
-      user_data               = "${data.template_file.blue.rendered}"
-      disable_api_termination = "${var.termination_protection}"
-      key_name                = "${var.key_name}"
-      subnet_id               = "${aws_subnet.subnet_adesao_spring.id}"
-      vpc_security_group_ids = [
-        ...
-      ]
-      tags {
-        ...
-      }
-    }
-
+```
+resource "aws_instance" "adesao_spring_boot" {
+  ami                     = "${data.aws_ami.amazon_linux.id}"
+  instance_type           = "${var.instance_type}"
+  iam_instance_profile    = "${data.aws_iam_role.oicontrole.name}"
+  user_data               = "${data.template_file.blue.rendered}"
+  disable_api_termination = "${var.termination_protection}"
+  key_name                = "${var.key_name}"
+  subnet_id               = "${aws_subnet.subnet_adesao_spring.id}"
+  vpc_security_group_ids = [
+    ...
+  ]
+  tags {
+    ...
+  }
+}
+```
 
 ---
 
