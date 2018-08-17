@@ -21,8 +21,6 @@ A ideia era um ambiente simples:
 
 ## Tentativa inicial ##
 
-- Criar unidade por unidade
-
 
     resource "aws_instance" "adesao_spring_boot" {
       ami                     = "${data.aws_ami.amazon_linux.id}"
