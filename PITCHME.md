@@ -23,8 +23,8 @@ A ideia era um ambiente simples:
 
 - Criar unidade por unidade
 
+
     resource "aws_instance" "adesao_spring_boot" {
-      count                   = "${var.instances_count}"
       ami                     = "${data.aws_ami.amazon_linux.id}"
       instance_type           = "${var.instance_type}"
       iam_instance_profile    = "${data.aws_iam_role.oicontrole.name}"
@@ -39,6 +39,7 @@ A ideia era um ambiente simples:
         ...
       }
     }
+
 
 ---
 
