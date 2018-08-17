@@ -1,14 +1,18 @@
-# Flux 
+# Devops #
 
-An application architecture for React
+Um overview sobre as soluções adotadas e a forma de criação do ambiente.
 
 ---
 
-### Flux Design
+## Ideia inicial ##
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+![Flux Explained](assets/architecture_diagram.jpg)
+
+---
+
+## Tentativa inicial ##
+
+- Criar unidade por unidade
 
 ---
 
